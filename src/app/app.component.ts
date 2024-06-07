@@ -10,10 +10,10 @@ export class AppComponent {
 total =0;
 Quan=0;
   foodmenu=[
-    {id:1,name:"دجاج",price:30,description:"دجاج مشوي على الفحم",img:"/assets/m.jpeg"},
-    {id:2,name:"دجاج",price:30,description:"دجاج شواية ",img:"/assets/v.jpeg"},
-    {id:3,name:"ايدام",price:20,description:"ايدام خضار مشكل",img:"/assets/m.jpeg"},
-    {id:4,name:"ايدام",price:20,description:"ايدام  بالدجاج على الفرن",img:"/assets/m.jpeg"}
+    {id:1,name:"لازانيا",price:30,description:"لازانيا لحم",img:"/assets/Pasta.jpg"},
+    {id:2,name:"برجر",price:30,description:" برجر دجاج مشوي مع صوص رعيب",img:"/assets/burger.jpg"},
+    {id:3,name:"شاورما",price:20,description:" شاورما مع المخلل وصوص الثوم",img:"/assets/shaurma.jpg"},
+    {id:4,name:"مقبلات",price:20,description:"  سلطه فتوش",img:"/assets/salad.jpg"}
   ]
 event: any;
 
