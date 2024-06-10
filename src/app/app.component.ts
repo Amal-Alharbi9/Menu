@@ -34,4 +34,13 @@ event: any;
     }
 
   }
+
+  Searchtxt:string="";
+
+  find(foodmenu:any[]){
+
+    console.log(this.Searchtxt);
+    return foodmenu.filter(i=> i.name.toLowerCase().includes(this.Searchtxt.toLowerCase()));
+  }
+
 }

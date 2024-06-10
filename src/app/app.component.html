@@ -60,12 +60,12 @@
 </router-outlet> -->
 
 <div class="container ">
-  <div class="row mt-5">
-    <div class="col text-center">
-      <h1 class="alert alert-info">قائمة الطعام</h1>
+  <div class="row mt-4">
+    <div class="col text-center p-2" >
+      <h1 class="alert alert-success" value="#8B70B2">قائمة الطعام</h1>
     </div>
   </div>
-  <div class="row bg-dark text-white p-2">
+  <div class="row bg-light text-black p-2">
     <div class="col">
       <span class="p-2">
         إجمالي السعر
@@ -77,8 +77,17 @@
      <span> {{Quan}} </span> 
     </div>
   </div> 
-  <div class="card ">
-    <div class="card-body">
+ <div class="row ">
+  <div class="col p-2">
+    <label for="search" class="col-sm-2 col-form-label">Search</label>
+    <input type="search" class="form-control border-success" [(ngModel)]="Searchtxt">
+
+
+  </div>
+ </div>
+
+  <div class="card border-success">
+    <div class="card-body p-2">
     <table class="table table-d-flex align-items-center " >
       <thead>
         <tr>
@@ -91,7 +100,7 @@
         </tr>
       </thead> 
       <tbody>
-        <tr *ngFor="let item of foodmenu">
+        <tr *ngFor="let item of find(foodmenu)" >
           <td>{{item.id}}</td>
           <td>{{item.name}}</td>
           <td>{{item.price}}</td>
